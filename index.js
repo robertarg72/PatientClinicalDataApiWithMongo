@@ -353,7 +353,7 @@ function getPatientData(req){
   if (req.params.Address === undefined ) {
     req.params.Address = '';
   }
-  if (req.params.IsInCritcalCondition === undefined || !req.params.IsInCritcalCondition || req.params.IsInCritcalCondition == false) {
+  if (req.params.IsInCritcalCondition === undefined || !req.params.IsInCritcalCondition || req.params.IsInCritcalCondition == "no" || req.params.IsInCritcalCondition == false ) {
     req.params.IsInCritcalCondition = false;
   }
   else {
