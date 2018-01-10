@@ -162,7 +162,7 @@ server.get('/patients/:id', function (req, res, next) {
 
     if (patient) {
       // Send the patient if no issues
-      res.send(patient)
+      res.send(patient[0])
     } else {
       // Send 404 header if the patient doesn't exist
       res.send(404)
